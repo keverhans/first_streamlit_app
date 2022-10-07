@@ -41,7 +41,7 @@ streamlit.dataframe(my_data_rows)
 def get_fruityvice_data(this_fruit_choice):
       fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
       fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-      retyrn fruityvice_normalized
+      return fruityvice_normalized
       
 # allow the end user to add a fruit to the list
 try:
